@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    /* overflow: hidden; */
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-height: 100%;
+    background: #edf2f7;
+  }
+  
+//   * {
+//     -webkit-font-smoothing: antialased;
+//     -moz-osx-font-smoothing: antialased;
+//     font-family: 'Roboto', sans-serif;
+//   }
+  
+  /* SPACER */
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+
+button {
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    /* height: 40px; */
+    /* flex-shrink: 0; */
+    /* line-height: 40px; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    /* text-align: center; */
+    margin: 0;
+    /* min-width: 64px; */
+    /* line-height: 36px; */
+    /* padding: 0 16px; */
+    border-radius: 4px;
+    overflow: visible;
+    color: inherit;
+    background: transparent;
+}
+
+.user-menu .mat-button-wrapper {
+  float: right;
+}
+
+// 
+.mat-drawer-container {
+  margin: 20px;
+}
+.main_content {
+  margin-left: 20px;
+  background: #ffffff !important;
+}
+.mat-drawer-container {
+  background-color: #edf2f7;
+}
+.mat-list-base {
+  padding-top: 0px !important;
+}
