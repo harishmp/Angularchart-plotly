@@ -1,0 +1,23 @@
+<div>
+    <div style="padding: 0px 16px;background: rgb(203, 213, 224);align-items: center;display: flex;flex: 1 1 100%;">
+    <h5>CHART</h5>
+    <span class="spacer"></span>
+    <!-- <mat-form-field> -->
+        <!-- <mat-select name="countryString" [(value)]="selectedCountry" (ngModelChange)="onFoodSelection2()">
+          <mat-option [value]="'Cell 1'">Cell 1</mat-option>
+          <mat-option [value]="'Cell 2'">Cell 2</mat-option>
+          <mat-option [value]="'Cell 3'">Cell 3</mat-option>
+          <mat-option [value]="'Cell 4'">Cell 4</mat-option>
+          <mat-option [value]="'Diaplay All'">Diaplay All</mat-option>
+        </mat-select> -->
+        <mat-form-field>
+          <mat-select name="countryReactiveVaraible" [(value)]="selectedCountry" (selectionChange)="onBookChange($event)">
+            <mat-option *ngFor="let country of countries" [value]="country.short">
+              {{country.full}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      <!-- </mat-form-field> -->
+    </div>
+    <plotly-plot [data]="graph.data" [layout]="graph.layout"></plotly-plot>
+</div>
