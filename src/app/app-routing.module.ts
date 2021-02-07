@@ -10,7 +10,9 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./components/about/about.module').then(m => m.AboutModule)
-  }
+  },
+  { path: '',  redirectTo: 'about', pathMatch: 'full'},
+  { path: '**',  redirectTo: 'about'}
 ];
 
 @NgModule({

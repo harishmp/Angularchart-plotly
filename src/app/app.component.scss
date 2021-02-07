@@ -1,6 +1,10 @@
 p {
     font-family: Lato;
   }
+
+  .mat-drawer-content {
+    height: calc(100vh - 200px);
+}
   
   .main_content {
     // width:100%; 

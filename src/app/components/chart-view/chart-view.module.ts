@@ -10,11 +10,12 @@ import { PlotlyModule } from 'angular-plotly.js';
 import { MaterialModule } from 'src/app/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartViewService } from './chart-view.service';
+import { CombinedChartComponent } from './combined-chart/combined-chart.component';
  
 PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
-  declarations: [ChartViewComponent, ChartComponent],
+  declarations: [ChartViewComponent, ChartComponent, CombinedChartComponent],
   imports: [
     CommonModule,
     ChartViewRoutingModule,
