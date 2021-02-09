@@ -6,7 +6,6 @@ import { onSideNavChange, animateText } from './animations'
 interface Page {
   link: string;
   name: string;
-  icon: string;
 }
 
 @Component({
@@ -21,8 +20,9 @@ export class LeftNavComponent implements OnInit {
   public linkText: boolean = true;
 
   public pages: Page[] = [
-    {name: 'About', link:'about', icon: 'computer'},
-    {name: 'Chart', link:'chart-view', icon: 'bar_chart'},
+    {name: 'navigation', link:'navigation'},
+    {name: 'About', link:'navigation/about'},
+    {name: 'Chart', link:'navigation/chart-view'},
   ]
 
   constructor(private _sidenavService: SidenavService) { }

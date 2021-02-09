@@ -12,16 +12,12 @@ interface list {
 export class AboutComponent implements OnInit {
 
   codingChallenge: Array<list> = [
-    {'name': 'THE CHALLENGES OF THE CODING CHALLENGE'},
-    {'name': 'To start with, I would like to appriciate the way the task is explained and shared files were helpfull to achieve the task.'},
-    {'name': 'From a technical point of view, I did not face any perticular challenge as I have experience working on the similar features such as Git, Angular Material, Navigation, and Obervables before.'},
-  ]
-
-  timeAssessment: Array<list> = [
-    {'name': 'Understaing the task - 20mns'},
-    {'name': 'To create a layout(with header and sidebar and router) - 1 hour'},
-    {'name': 'About component, and Chart component with Service integration - 3 hours'},
-    {'name': 'Total Coding - 4 Hours'},
+    {'name': 'I think i have misunderstood the routing to include the Navigation page and two subpages as “About” and “Chart”'},
+    {'name': 'I had few questions on routing explained and UI given is not having the consistency of padding and thought of asking in the next interview call.'},
+    {'name': 'However, I have made few changes in the UI and routing.'},
+    {'name': 'I request you to reconsider my profile.'},
+    {'name': 'Thank you for your time.'},
+    {'name': 'Looking forward to hearing from you.'}
   ]
 
   constructor() { }

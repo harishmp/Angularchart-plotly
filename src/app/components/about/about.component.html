@@ -1,14 +1,12 @@
 <div>
-    <h4 style="padding: 16px;background: rgb(203, 213, 224);">ABOUT</h4>
+  <div class="top-heading">
+    <p style="margin: 0px;">About</p>
+  </div>
 
+  <div class="about-body">
     <h2>THE CHALLENGES OF THE CODING CHALLENGE</h2>
     <mat-list role="list" *ngFor="let list of codingChallenge">
       <mat-list-item role="listitem">{{ list.name }}</mat-list-item>
     </mat-list>
-
-    <br/><br/>
-    <h2>TIME ASSESSMENT</h2>
-    <mat-list role="list" *ngFor="let list of timeAssessment">
-      <mat-list-item role="listitem">{{ list.name }}</mat-list-item>
-    </mat-list>
+  </div>
 </div>

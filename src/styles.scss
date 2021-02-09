@@ -76,3 +76,26 @@ button {
 .mat-list-base {
   padding-top: 0px !important;
 }
+.sidebar{
+  .mat-list-base .mat-list-item{
+    height: 0px !important;
+    width: auto !important;
+  }
+  .mat-nav-list .mat-list-item {
+    padding: 33px 25px 29px 25px !important;
+  }
+  .mat-nav-list .mat-list-item:first-child {
+    background: #CBD5E0;
+  }
+}
+.top-heading{
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #CBD5E0;
+  p{
+      font-size: 24.5px;
+      color: #4A5568;
+      padding: 23px 25px 22px 47px;
+  }
+}

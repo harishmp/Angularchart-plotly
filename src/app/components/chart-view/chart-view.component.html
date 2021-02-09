@@ -1,6 +1,6 @@
 <div>
-    <div style="padding: 0px 16px;background: rgb(203, 213, 224);align-items: center;display: flex;flex: 1 1 100%;">
-    <h4>CHART</h4>
+  <div class="top-heading" style="align-items: center;display: flex;flex: 1 1 100%;">
+    <p style="margin: 0px;">Chart</p>
     <span class="spacer"></span>
         <mat-form-field>
           <mat-select [(value)]="selectedBatterymodule.value" (selectionChange)="onChangebatterymodule($event)">
@@ -10,7 +10,7 @@
             <mat-option [value]="'all'">Display All</mat-option>
           </mat-select>
         </mat-form-field>
-    </div>
+  </div>
     <div>
       <app-chart [graph]="graph" *ngIf="switchComponents"></app-chart>
       <app-combined-chart [graph]="graph" *ngIf="!switchComponents"></app-combined-chart>
